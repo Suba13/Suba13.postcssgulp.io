@@ -1,0 +1,351 @@
+* *:not(input):not(textarea):not(select){
+	background-color:rgba(0, 0, 255, 0.1);
+}
+
+.content1,.content2{
+	width:calc(99.9% * 1/4 - (30px - 30px * 1/4));
+	height:45px;
+	margin-bottom: 5px;
+	color: red;
+	background-color: green;
+}
+
+.content1:nth-child(1n),.content2:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+}
+
+.content1:last-child,.content2:last-child{
+	margin-right:0;
+}
+
+.content1:nth-child(3n),.content2:nth-child(3n){
+	margin-right:0;
+	float:right;
+}
+
+.content1:nth-child(3n + 1),.content2:nth-child(3n + 1){
+	clear:both;
+}
+.content3{
+	width:calc(99.9% * 1/2 - (30px - 30px * 1/2));
+	margin-bottom: 5px;
+	height:45px;
+	background-color: green;
+}
+.content3:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+}
+.content3:last-child{
+	margin-right:0;
+}
+.content3:nth-child(3n){
+	margin-right:0;
+	float:right;
+}
+.content3:nth-child(3n + 1){
+	clear:both;
+}
+@media (min-width: 900px) {
+    .content div {
+        width: calc(99.9% * 1/6 - (30px - 30px * 1/6));
+    }
+    .content div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .content div:last-child {
+        margin-right: 0;
+    }
+    .content div:nth-child(6n) {
+        margin-right: 0;
+        float: right;
+    }
+    .content div:nth-child(6n + 1) {
+        clear: both;
+    }
+}
+@media (max-width: 500px) {
+    .content div {
+        width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+    }
+    .content div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .content div:last-child {
+        margin-right: 0;
+    }
+    .content div:nth-child(1n) {
+        margin-right: 0;
+        float: right;
+    }
+    .content div:nth-child(1n + 1) {
+        clear: both;
+    }
+}
+
+.upper,.lower{
+	width:calc(99.9% * 1/1 - (30px - 30px * 1/1));
+	height:45px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color: red;
+	background-color: blue;
+	
+}
+
+.upper:nth-child(1n),.lower:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+	
+}
+
+.upper:last-child,.lower:last-child{
+	margin-right:0;
+	
+}
+
+.upper:nth-child(1n),.lower:nth-child(1n){
+	margin-right:0;
+	float:right;
+	
+}
+
+.upper:nth-child(1n + 1),.lower:nth-child(1n + 1){
+	clear:both;
+	
+}
+
+.lower1,.lower2,.upper1,.upper2{
+	width:calc(99.9% * 1/2 - (30px - 30px * 1/2));
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height:35px;
+	background-color: lightblue;
+	
+}
+
+.lower1:nth-child(1n),.lower2:nth-child(1n),.upper1:nth-child(1n),.upper2:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+	
+}
+
+.lower1:last-child,.lower2:last-child,.upper1:last-child,.upper2:last-child{
+	margin-right:0;
+	
+}
+
+.lower1:nth-child(2n),.lower2:nth-child(2n),.upper1:nth-child(2n),.upper2:nth-child(2n){
+	margin-right:0;
+	float:right;
+	
+}
+
+.lower1:nth-child(2n + 1),.lower2:nth-child(2n + 1),.upper1:nth-child(2n + 1),.upper2:nth-child(2n + 1){
+	clear:both;
+	
+}
+.leftside{
+	width:calc(99.9% * 1/2 - (30px - 30px * 1/2));
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height:100px;
+}
+.leftside:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+}
+.leftside:last-child{
+	margin-right:0;
+}
+.leftside:nth-child(2n){
+	margin-right:0;
+	float:right;
+}
+.leftside:nth-child(2n + 1){
+	clear:both;
+}
+.rightside1{
+	width:calc(99.9% * 1/2 - (30px - 30px * 1/2));
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height:40px;
+}
+.rightside1:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+}
+.rightside1:last-child{
+	margin-right:0;
+}
+.rightside1:nth-child(2n){
+	margin-right:0;
+	float:right;
+}
+.rightside1:nth-child(2n + 1){
+	clear:both;
+}
+.rightside2{
+	width:calc(99.9% * 1/1 - (30px - 30px * 1/1));
+	margin-bottom: 5px;
+	margin-top: 40px;
+	height:40px;
+}
+.rightside2:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+}
+.rightside2:last-child{
+	margin-right:0;
+}
+.rightside2:nth-child(1n){
+	margin-right:0;
+	float:right;
+}
+.rightside2:nth-child(1n + 1){
+	clear:both;
+}
+.rightside{
+	width:calc(99.9% * 1/2 - (30px - 30px * 1/2));
+	margin-bottom: 5px;
+	margin-top: 5px;
+	height:100px;
+}
+.rightside:nth-child(1n){
+	float:left;
+	margin-right:30px;
+	clear:none;
+}
+.rightside:last-child{
+	margin-right:0;
+}
+.rightside:nth-child(2n){
+	margin-right:0;
+	float:right;
+}
+.rightside:nth-child(2n + 1){
+	clear:both;
+}
+@media (max-width: 500px) {
+    .first div {
+        width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+    }
+    .first div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .first div:last-child {
+        margin-right: 0;
+    }
+    .first div:nth-child(1n) {
+        margin-right: 0;
+        float: right;
+    }
+    .first div:nth-child(1n + 1) {
+        clear: both;
+    }
+}
+
+@media (max-width: 500px) {
+    .second div {
+        width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+    }
+    .second div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .second div:last-child {
+        margin-right: 0;
+    }
+    .second div:nth-child(1n) {
+        margin-right: 0;
+        float: right;
+    }
+    .second div:nth-child(1n + 1) {
+        clear: both;
+    }
+}
+@media (max-width: 500px) {
+    .third div {
+        width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+        margin-bottom: 20px;
+        
+    }
+    .third div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+        
+    }
+    .third div:last-child {
+        margin-right: 0;
+        
+    }
+    .third div:nth-child(1n) {
+        margin-right: 0;
+        float: right;
+        
+    }
+    .third div:nth-child(1n + 1) {
+        clear: both;
+        
+    }
+}
+@media (max-width: 500px) {
+    .4th div {
+        width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .4th div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .4th div:last-child {
+        margin-right: 0;
+    }
+    .4th div:nth-child(1n) {
+        margin-right: 0;
+        float: right;
+    }
+    .4th div:nth-child(1n + 1) {
+        clear: both;
+    }
+}
+@media (max-width: 500px) {
+    .inside div {
+        width: calc(99.9% * 1/1 - (30px - 30px * 1/1));
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .inside div:nth-child(1n) {
+        float: left;
+        margin-right: 30px;
+        clear: none;
+    }
+    .inside div:last-child {
+        margin-right: 0;
+    }
+    .inside div:nth-child(1n) {
+        margin-right: 0;
+        float: right;
+    }
+    .inside div:nth-child(1n + 1) {
+        clear: both;
+    }
+}
